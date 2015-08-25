@@ -1,0 +1,15 @@
+#restart-button{
+  width:200px;
+  height:40px;
+  background-color:red;
+  color: white;
+  text-align: center;
+  }
+
+  #restart-button:hover {
+    cursor: pointer;
+  }
+
+#restart-button h2 {
+  margin: auto;
+}

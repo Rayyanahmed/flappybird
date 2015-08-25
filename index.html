@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Flappy Bird</title>
+    <script type="text/javascript" src="javascripts/game.js" charset="utf-8"></script>
+    <script type="text/javascript" src="javascripts/bird.js" charset="utf-8"></script>
+    <script type="text/javascript" src="javascripts/level.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="flappy.css">
+  </head>
+  <body>
+    <canvas id="bird-game"></canvas>
+    <div id="restart-button">
+      <h2>Start Game</h2>
+      </div>
+    <script charset="utf-8">
+      var canvas = document.getElementById("bird-game");
+      canvas.height = 480;
+      canvas.width = 640;
+      var game = new Game(canvas);
+      game.start();
+      document.getElementById('restart-button').addEventListener('click', function(){
+        game = new Game(canvas);
+        game.start();
+      });
+    </script>
+  </body>
+</html>
